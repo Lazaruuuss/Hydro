@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Panel</title>
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="DashboardStyles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="./index.html" class="logo">Hydroponics</a>
+            <div class="nav-mobile">
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="#" class="list-link current">Dashboard</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">History</a>
+                    </li>
+                    <li class="list-item dropdown">
+                        <button class="list-link dropdown-btn place-items-center">
+                            <i class="ri-notification-3-line"></i>
+                        </button>
+                        <ul class="list dropdown-menu">
+                            <li class="list-item">
+                                <a href="#" class="list-link">Dashboard</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link">History</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link">Notifications</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="icon-btn menu-toggle-btn menu-toggle-close place-items-center">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="align-right">
+                <button class="icon-btn menu-toggle-btn menu-toggle-open place-items-center">
+                    <i class="ri-more-line"></i>
+                </button>
+                <button class="icon-btn place-items-center">
+                    <i class="ri-logout-box-line"></i>
+                    Logout
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- Welcome-message -->
+    <section class="welcome-message">
+        <div class="container">
+            <h1 class="title independent-title">Hydroponics System</h1>
+            <div class=""card>
+                <header class="card header">
+                    <h2 class="title">Sensors:</h2>
+                    <div class="skill-bars">
+                        <div class="bar">
+                          <div class="info">
+                            <span>pH Level</span>
+                          </div>
+                          <div class="progress-line html">
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="bar">
+                          <div class="info">
+                            <span>EC Level (in mS/cm)</span>
+                          </div>
+                          <div class="progress-line css">
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="bar">
+                          <div class="info">
+                            <span>Temperature (in C)</span>
+                          </div>
+                          <div class="progress-line jquery">
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                </header>
+            </div>
+        </div>
+    </section>
+    <!-- Management-area -->
+    <section class="management-area">
+      <div class="management-area-container container d-grid">
+        <div class="card">
+          <header class="card-header">
+            <h2 class="title">Actuators:</h2>
+          </header>
+          <class class="card-body">
+            <a href="#" class="card-body-link">
+              <span>Water Pump</span>
+              <i class="ri-blur-off-line w3-xlarge"></i>
+              <i class="ri-toggle-line w3-xxlarge"></i>
+              <i class="ri-drop-line w3-xlarge"></i>
+            </a>
+          </class>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+
+<!-- Script     -->
+<script src="Dashboard.js"></script>    
+</body>
+</html>
